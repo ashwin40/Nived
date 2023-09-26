@@ -1,6 +1,5 @@
 pipeline {
     agent any 
-
     stages {
         stage('Dependencies') {
             steps {
@@ -32,7 +31,6 @@ pipeline {
         stage('Cleanup') {
             steps {
                 echo 'Cleaning up...'
-                sh 'make clean'
             }
         }
     }
